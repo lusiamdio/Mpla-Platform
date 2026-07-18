@@ -44,28 +44,28 @@ export default function PublicWebsite({ onNavigateToAuth }: PublicWebsiteProps) 
       title_en: "Building Unity. Empowering Communities.",
       sub_pt: "Promovendo a cidadania participativa, solidariedade e progresso dos angolanos na África do Sul.",
       sub_en: "Promoting participatory citizenship, solidarity and progress for Angolans in South Africa.",
-      image: "/src/assets/images/mpla_supporters_background_1784328681804.jpg"
+      image: "https://cdn.dailymaverick.co.za/dailymaverick/wp-content/uploads/2022/01/000_9D84GG-1.jpg"
     },
     {
       title_pt: "Inovação, Disciplina e Liderança Jovem",
       title_en: "Innovation, Discipline and Youth Leadership",
       sub_pt: "A JMPLA liderando a formação académica, empreendedorismo e o futuro da nossa comunidade.",
       sub_en: "JMPLA leading academic training, entrepreneurship and the future of our community.",
-      image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1920&q=80"
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUaULF4VKz7AMPfCly9-Y4QQMctIz6BYkUBN80F38Q-w&s=10"
     },
     {
       title_pt: "Emancipação da Mulher e Ação Social OMA",
       title_en: "Women Empowerment and OMA Social Action",
       sub_pt: "Garantindo a igualdade de oportunidades e o amparo social a todas as famílias angolanas.",
       sub_en: "Ensuring equal opportunities and social support for all Angolan families.",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1920&q=80"
+      image: "https://shutterstock.com/editorial/image-editorial/O1Tbk617M9TbI32cODU5Ng==/delegates-popular-movement-liberation-angola-mpla-show-440nw-9876929i.jpg"
     },
     {
       title_pt: "Diplomacia Cívica e Preservação da Identidade",
       title_en: "Civic Diplomacy and Preserving Identity",
       sub_pt: "Sede central de coordenação unindo a nossa pátria aos desafios e conquistas na diáspora.",
       sub_en: "Central coordination headquarter linking our homeland to the challenges and achievements in diaspora.",
-      image: "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=1920&q=80"
+      image: "https://static.euronews.com/articles/stories/06/94/41/36/1024x538_cmsv2_cce1dd0f-274d-57f6-90e8-bdf685f81aae-6944136.jpg"
     }
   ];
 
@@ -289,12 +289,15 @@ export default function PublicWebsite({ onNavigateToAuth }: PublicWebsiteProps) 
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   const galleryImages = [
-    { url: "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?auto=format&fit=crop&w=800&q=80", category: "events", title_pt: "Conferência Regional", title_en: "Regional Conference" },
-    { url: "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80", category: "community", title_pt: "Ação de Solidariedade", title_en: "Solidarity Outreach" },
-    { url: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80", category: "leadership", title_pt: "Comitê OMA e JMPLA", title_en: "OMA & JMPLA Committee" },
-    { url: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80", category: "culture", title_pt: "Celebração da Independência", title_en: "Independence Day Celebration" },
-    { url: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80", category: "education", title_pt: "Workshop Jovem", title_en: "Youth Workshop" },
-    { url: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=800&q=80", category: "events", title_pt: "Fórum de Negócios SADC", title_en: "SADC Business Forum" }
+    { url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUaULF4VKz7AMPfCly9-Y4QQMctIz6BYkUBN80F38Q-w&s=10", category: "events", title_pt: "JMPLA - Reunião Geral de Quadros", title_en: "JMPLA - General Officers Meeting" },
+    { url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5dmmZOI1ueDakZtkqMPnmf0eiT0u1cSnhl0Y2VfhY9hQMfZ9Gld5iCJZv&s=10", category: "education", title_pt: "JMPLA - Fórum Académico em Gauteng", title_en: "JMPLA - Academic Forum in Gauteng" },
+    { url: "https://shutterstock.com/editorial/image-editorial/O1Tbk617M9TbI32cODU5Ng==/delegates-popular-movement-liberation-angola-mpla-show-440nw-9876929i.jpg", category: "community", title_pt: "OMA - Delegação no Congresso Regional", title_en: "OMA - Regional Congress Delegation" },
+    { url: "https://static.euronews.com/articles/stories/06/94/41/36/1024x538_cmsv2_cce1dd0f-274d-57f6-90e8-bdf685f81aae-6944136.jpg", category: "events", title_pt: "MPLA - Lançamento da Campanha Nacional", title_en: "MPLA - National Campaign Launch" },
+    { url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYheVPTZ0uDgb5oLwwkZPgDYLD4_PPiP2cHPsR1EtvwKl5la7599hJuowQ&s=10", category: "leadership", title_pt: "MPLA - Liderança e Comitê Central", title_en: "MPLA - Leadership and Central Committee" },
+    { url: "https://cdn.dailymaverick.co.za/dailymaverick/wp-content/uploads/2022/01/000_9D84GG-1.jpg", category: "culture", title_pt: "Militantes e Apoiantes na Diáspora", title_en: "Members and Supporters in the Diaspora" },
+    { url: "https://static.euronews.com/articles/stories/06/96/07/50/900x506_cmsv2_2419f12a-d327-5928-bc76-4b6eb6218eec-6960750.jpg", category: "events", title_pt: "MPLA - Congresso de Concertação Política", title_en: "MPLA - Political Concertation Congress" },
+    { url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTigATXWgvEI8URDv80_l3AezYSMuce5RnbGw5qRU187KizdGYQdXgln3jq&s=10", category: "culture", title_pt: "MPLA - Mobilização de Apoio e Solidariedade", title_en: "MPLA - Support & Solidarity Mobilization" },
+    { url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx9MypTt1ZG2w-y3ZCEknhdIZIs6vBY6DG952S_6oe8pCfRv9bnH-TnePV&s=10", category: "community", title_pt: "Acção Cívica de Integração da Diáspora", title_en: "Civic Integration Outreach for Diaspora" }
   ];
 
   const filteredGallery = useMemo(() => {
@@ -317,6 +320,9 @@ export default function PublicWebsite({ onNavigateToAuth }: PublicWebsiteProps) 
 
   // Al Jazeera News Article Modal state
   const [selectedArticle, setSelectedArticle] = useState<any | null>(null);
+
+  // Dropdown for Sobre in navigation
+  const [showSobreDropdown, setShowSobreDropdown] = useState(false);
 
   // Testimonials Auto-slide Carousel
   const [activeTestimonial, setActiveTestimonial] = useState(0);
@@ -475,7 +481,54 @@ export default function PublicWebsite({ onNavigateToAuth }: PublicWebsiteProps) 
 
           {/* Navigation Links */}
           <nav className="hidden lg:flex items-center gap-7 text-xs font-bold uppercase tracking-widest text-slate-100">
-            <a href="#about" className="hover:text-amber-300 transition">{language === "PT" ? "Sobre" : "About"}</a>
+            {/* SOBRE DROPDOWN */}
+            <div 
+              className="relative"
+              onMouseEnter={() => setShowSobreDropdown(true)}
+              onMouseLeave={() => setShowSobreDropdown(false)}
+            >
+              <button 
+                className="hover:text-amber-300 transition flex items-center gap-1 py-2 font-bold uppercase tracking-widest text-xs cursor-pointer bg-transparent border-0 text-slate-100"
+              >
+                {language === "PT" ? "Sobre" : "About"}
+                <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${showSobreDropdown ? "rotate-180" : ""}`} />
+              </button>
+              
+              <AnimatePresence>
+                {showSobreDropdown && (
+                  <motion.div 
+                    initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                    transition={{ duration: 0.15 }}
+                    className="absolute left-0 mt-1 w-48 bg-slate-900 border border-neutral-800 rounded-xl shadow-2xl p-2 flex flex-col z-50 text-left"
+                  >
+                    <a 
+                      href="#about" 
+                      onClick={() => setShowSobreDropdown(false)}
+                      className="px-3 py-2 text-xs font-bold text-slate-100 hover:text-amber-400 hover:bg-slate-800 rounded-lg transition"
+                    >
+                      MPLA
+                    </a>
+                    <a 
+                      href="#jmpla" 
+                      onClick={() => setShowSobreDropdown(false)}
+                      className="px-3 py-2 text-xs font-bold text-slate-100 hover:text-amber-400 hover:bg-slate-800 rounded-lg transition"
+                    >
+                      JMPLA
+                    </a>
+                    <a 
+                      href="#oma" 
+                      onClick={() => setShowSobreDropdown(false)}
+                      className="px-3 py-2 text-xs font-bold text-slate-100 hover:text-amber-400 hover:bg-slate-800 rounded-lg transition"
+                    >
+                      OMA
+                    </a>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
             <a href="#leadership" className="hover:text-amber-300 transition">{language === "PT" ? "Liderança" : "Leaders"}</a>
             <a href="#dashboard" className="hover:text-amber-300 transition">{language === "PT" ? "Painel" : "Dashboard"}</a>
             <a href="#news" className="hover:text-amber-300 transition">{language === "PT" ? "Notícias" : "News"}</a>
@@ -812,6 +865,279 @@ export default function PublicWebsite({ onNavigateToAuth }: PublicWebsiteProps) 
                 </p>
               )}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* JMPLA SHOWCASE SECTION */}
+      <section className="py-20 text-left border-t border-slate-150 bg-[#FAF9F5] dark:bg-[#111] dark:border-neutral-800" id="jmpla">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            {/* Left Column: Description & Initiatives */}
+            <div className="lg:col-span-7 space-y-6">
+              <span className="text-[10px] font-mono font-black uppercase text-[#B5121B] bg-red-50 border border-red-100 px-3 py-1 rounded-full dark:bg-red-950/20 dark:text-red-400 dark:border-red-900/30">
+                {language === "PT" ? "JUVENTUDE DO PARTIDO" : "PARTY YOUTH WING"}
+              </span>
+              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight leading-none">
+                JMPLA
+              </h2>
+              <p className="text-sm font-semibold text-[#D4AF37] tracking-wider uppercase font-mono">
+                {language === "PT" ? "Juventude do Movimento Popular de Libertação de Angola" : "Youth of the Popular Movement for the Liberation of Angola"}
+              </p>
+              <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-xs sm:text-sm font-light">
+                {language === "PT" 
+                  ? "A JMPLA na África do Sul é o motor dinâmico que mobiliza, capacita e integra a juventude angolana na diáspora. Focamo-nos no desenvolvimento de líderes do amanhã, através de programas académicos, mentorias de carreira, eventos culturais e integração tecnológica."
+                  : "JMPLA in South Africa is the dynamic engine mobilizing, empowering, and integrating Angolan youth in the diaspora. We focus on developing the leaders of tomorrow through academic programs, career mentorship, cultural events, and technological integration."}
+              </p>
+
+              {/* Grid of Initiatives */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="p-4 bg-white dark:bg-neutral-900 border border-slate-200/60 dark:border-neutral-800 rounded-2xl shadow-xs">
+                  <div className="w-8 h-8 bg-[#D4AF37]/15 rounded-lg flex items-center justify-center mb-3">
+                    <BookOpen className="w-4 h-4 text-[#D4AF37]" />
+                  </div>
+                  <h4 className="font-extrabold text-slate-900 dark:text-white text-xs uppercase tracking-wider mb-1">
+                    {language === "PT" ? "Suporte Académico" : "Academic Support"}
+                  </h4>
+                  <p className="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">
+                    {language === "PT" 
+                      ? "Aconselhamento universitário, auxílio com matrículas, bolsas de estudo locais e grupos de estudo."
+                      : "University advisory, application assistance, local bursary coordination, and study groups."}
+                  </p>
+                </div>
+
+                <div className="p-4 bg-white dark:bg-neutral-900 border border-slate-200/60 dark:border-neutral-800 rounded-2xl shadow-xs">
+                  <div className="w-8 h-8 bg-[#B5121B]/15 rounded-lg flex items-center justify-center mb-3">
+                    <Users className="w-4 h-4 text-[#B5121B]" />
+                  </div>
+                  <h4 className="font-extrabold text-slate-900 dark:text-white text-xs uppercase tracking-wider mb-1">
+                    {language === "PT" ? "Liderança e Cidadania" : "Leadership & Citizenship"}
+                  </h4>
+                  <p className="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">
+                    {language === "PT" 
+                      ? "Fóruns de debate, capacitação de quadros jovens e fortalecimento da consciência cívica e patriótica."
+                      : "Debate forums, training of young leaders, and strengthening civic and patriotic awareness."}
+                  </p>
+                </div>
+
+                <div className="p-4 bg-white dark:bg-neutral-900 border border-slate-200/60 dark:border-neutral-800 rounded-2xl shadow-xs">
+                  <div className="w-8 h-8 bg-amber-500/15 rounded-lg flex items-center justify-center mb-3">
+                    <Award className="w-4 h-4 text-amber-500" />
+                  </div>
+                  <h4 className="font-extrabold text-slate-900 dark:text-white text-xs uppercase tracking-wider mb-1">
+                    {language === "PT" ? "Empreendedorismo" : "Entrepreneurship"}
+                  </h4>
+                  <p className="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">
+                    {language === "PT" 
+                      ? "Networking de jovens profissionais, workshops práticos de negócios e incentivo a startups cívicas."
+                      : "Young professionals networking, business workshops, and boosting civic-oriented startups."}
+                  </p>
+                </div>
+
+                <div className="p-4 bg-white dark:bg-neutral-900 border border-slate-200/60 dark:border-neutral-800 rounded-2xl shadow-xs">
+                  <div className="w-8 h-8 bg-emerald-500/15 rounded-lg flex items-center justify-center mb-3">
+                    <Trophy className="w-4 h-4 text-emerald-500" />
+                  </div>
+                  <h4 className="font-extrabold text-slate-900 dark:text-white text-xs uppercase tracking-wider mb-1">
+                    {language === "PT" ? "Cultura e Desporto" : "Culture & Sports"}
+                  </h4>
+                  <p className="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">
+                    {language === "PT" 
+                      ? "Torneios de futebol comunitário, festivais culturais de música e dança integrando a pátria."
+                      : "Community soccer tournaments, cultural music & dance festivals connecting to our homeland."}
+                  </p>
+                </div>
+              </div>
+
+              <div className="pt-2">
+                <button 
+                  onClick={() => onNavigateToAuth("signup")}
+                  className="px-6 py-3 bg-[#B5121B] hover:bg-red-700 text-white font-bold text-xs tracking-wider uppercase rounded-xl transition shadow-lg shadow-red-900/10 hover:shadow-red-900/20 cursor-pointer"
+                >
+                  {language === "PT" ? "Filiar-me na JMPLA" : "Join JMPLA"}
+                </button>
+              </div>
+            </div>
+
+            {/* Right Column: Images Grid using User Provided JMPLA Images */}
+            <div className="lg:col-span-5 space-y-6">
+              <div className="grid grid-cols-2 gap-4">
+                <div className="rounded-2xl overflow-hidden border border-slate-200 dark:border-neutral-800 shadow-lg h-80 group relative">
+                  <img 
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUaULF4VKz7AMPfCly9-Y4QQMctIz6BYkUBN80F38Q-w&s=10" 
+                    alt="JMPLA Youth Event" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent flex items-end p-3">
+                    <p className="text-[10px] text-slate-200 font-bold uppercase tracking-wider font-mono">
+                      {language === "PT" ? "Organização e União" : "Organization & Unity"}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="rounded-2xl overflow-hidden border border-slate-200 dark:border-neutral-800 shadow-lg h-80 group relative">
+                  <img 
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5dmmZOI1ueDakZtkqMPnmf0eiT0u1cSnhl0Y2VfhY9hQMfZ9Gld5iCJZv&s=10" 
+                    alt="JMPLA Assembly" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent flex items-end p-3">
+                    <p className="text-[10px] text-slate-200 font-bold uppercase tracking-wider font-mono">
+                      {language === "PT" ? "Liderança Jovem" : "Youth Leadership"}
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Decorative Banner Block with provided Logo */}
+              <div className="bg-slate-100 dark:bg-neutral-900 border border-slate-200 dark:border-neutral-800 rounded-2xl p-4 flex items-center gap-4">
+                <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center p-1 shrink-0">
+                  <img 
+                    src="https://logowik.com/content/uploads/images/mpla-angola8253.logowik.com.webp" 
+                    alt="MPLA Brand" 
+                    className="w-full h-full object-contain"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+                <div>
+                  <h4 className="font-bold text-xs text-slate-900 dark:text-white uppercase">
+                    {language === "PT" ? "Juventude do MPLA" : "MPLA Youth Wing"}
+                  </h4>
+                  <p className="text-[10px] text-slate-500 dark:text-slate-400">
+                    {language === "PT" ? "Por Angola ao encontro do futuro!" : "For Angola, towards the future!"}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* OMA SHOWCASE SECTION */}
+      <section className="py-20 text-left border-t border-slate-150 bg-white dark:bg-neutral-950 dark:border-neutral-800" id="oma">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            {/* Left Column: Image Showcase using User Provided OMA Image */}
+            <div className="lg:col-span-5 space-y-6 order-last lg:order-first">
+              <div className="rounded-3xl overflow-hidden border-4 border-slate-50 dark:border-neutral-900 shadow-2xl h-[400px] group relative">
+                <img 
+                  src="https://shutterstock.com/editorial/image-editorial/O1Tbk617M9TbI32cODU5Ng==/delegates-popular-movement-liberation-angola-mpla-show-440nw-9876929i.jpg" 
+                  alt="OMA Delegates and Supporters" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition duration-500 filter brightness-95"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/20 to-transparent flex items-end p-6">
+                  <div>
+                    <span className="px-2.5 py-1 bg-[#B5121B] text-white text-[9px] font-mono font-bold uppercase rounded-sm block mb-1.5 w-max">
+                      {language === "PT" ? "DELEGADAS OMA" : "OMA DELEGATES"}
+                    </span>
+                    <h4 className="text-base font-serif font-bold text-white">
+                      {language === "PT" ? "Organização da Mulher Angolana na Diáspora" : "Organization of Angolan Women in Diaspora"}
+                    </h4>
+                  </div>
+                </div>
+              </div>
+
+              {/* Decorative Stats Strip */}
+              <div className="grid grid-cols-3 gap-4 bg-slate-50 dark:bg-neutral-900/50 border border-slate-100 dark:border-neutral-800 p-4 rounded-2xl text-center">
+                <div>
+                  <span className="block text-lg font-black text-[#B5121B]">4,500+</span>
+                  <span className="text-[9px] text-slate-500 font-semibold uppercase">{language === "PT" ? "Filiadas" : "Members"}</span>
+                </div>
+                <div>
+                  <span className="block text-lg font-black text-[#D4AF37]">9</span>
+                  <span className="text-[9px] text-slate-500 font-semibold uppercase">{language === "PT" ? "Comités" : "Committees"}</span>
+                </div>
+                <div>
+                  <span className="block text-lg font-black text-slate-900 dark:text-white">100%</span>
+                  <span className="text-[9px] text-slate-500 font-semibold uppercase">{language === "PT" ? "Dedicadas" : "Dedicated"}</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column: Mission and Programs */}
+            <div className="lg:col-span-7 space-y-6">
+              <span className="text-[10px] font-mono font-black uppercase text-amber-500 bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">
+                {language === "PT" ? "EMANCIPAÇÃO DA MULHER" : "WOMEN EMANCIPATION"}
+              </span>
+              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight leading-none">
+                OMA
+              </h2>
+              <p className="text-sm font-semibold text-[#B5121B] tracking-wider uppercase font-mono">
+                {language === "PT" ? "Organização da Mulher Angolana" : "Organization of Angolan Women"}
+              </p>
+              <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-xs sm:text-sm font-light">
+                {language === "PT" 
+                  ? "A OMA é o pilar de solidariedade, igualdade e apoio social das famílias angolanas na África do Sul. A nossa missão reside em defender os direitos das mulheres, apoiar a inclusão financeira e garantir amparo direto a mães, crianças e compatriotas em situação de vulnerabilidade migratória."
+                  : "OMA is the pillars of solidarity, equality, and social support for Angolan families in South Africa. Our mission lies in defending women's rights, supporting financial inclusion, and providing direct welfare to mothers, children, and compatriots in vulnerable migration states."}
+              </p>
+
+              {/* Core Programs Stack */}
+              <div className="space-y-3">
+                <div className="flex gap-4 p-4 hover:bg-slate-50 dark:hover:bg-neutral-900/60 rounded-2xl border border-transparent hover:border-slate-150 transition">
+                  <div className="w-10 h-10 bg-amber-100 dark:bg-amber-950/40 rounded-xl flex items-center justify-center shrink-0">
+                    <Heart className="w-5 h-5 text-amber-500 fill-amber-500" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-slate-900 dark:text-white text-xs uppercase tracking-wider mb-0.5">
+                      {language === "PT" ? "Apoio e Assistência Social" : "Welfare & Social Assistance"}
+                    </h4>
+                    <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                      {language === "PT" 
+                        ? "Distribuição de donativos alimentares, vestuário, agasalhos de inverno e auxílio médico voluntário para famílias imigrantes vulneráveis."
+                        : "Distribution of food hampers, clothing, winter blankets, and volunteer medical backup for vulnerable immigrant families."}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4 p-4 hover:bg-slate-50 dark:hover:bg-neutral-900/60 rounded-2xl border border-transparent hover:border-slate-150 transition">
+                  <div className="w-10 h-10 bg-red-100 dark:bg-red-950/40 rounded-xl flex items-center justify-center shrink-0">
+                    <Sparkles className="w-5 h-5 text-[#B5121B]" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-slate-900 dark:text-white text-xs uppercase tracking-wider mb-0.5">
+                      {language === "PT" ? "Empreendedorismo e Formação" : "Women Entrepreneurship & Training"}
+                    </h4>
+                    <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                      {language === "PT" 
+                        ? "Aulas de costura, literacia financeira, workshops de culinária e incentivo à formalização de pequenos comércios comunitários."
+                        : "Sewing classes, financial literacy, catering workshops, and support for formalizing small community-based retail trades."}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4 p-4 hover:bg-slate-50 dark:hover:bg-neutral-900/60 rounded-2xl border border-transparent hover:border-slate-150 transition">
+                  <div className="w-10 h-10 bg-emerald-100 dark:bg-emerald-950/40 rounded-xl flex items-center justify-center shrink-0">
+                    <ShieldCheck className="w-5 h-5 text-emerald-500" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-slate-900 dark:text-white text-xs uppercase tracking-wider mb-0.5">
+                      {language === "PT" ? "Aconselhamento e Integração Legal" : "Advisory & Legal Integration"}
+                    </h4>
+                    <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                      {language === "PT" 
+                        ? "Orientações práticas para mães solo sobre documentação de menores, processos consulares e inserção escolar regular de crianças."
+                        : "Practical tips for single mothers on minors documentation, consular services, and formal school enrollment for children."}
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="pt-2 flex flex-wrap gap-4">
+                <button 
+                  onClick={() => onNavigateToAuth("signup")}
+                  className="px-6 py-3 bg-[#D4AF37] hover:bg-yellow-500 text-slate-950 font-bold text-xs tracking-wider uppercase rounded-xl transition shadow-lg cursor-pointer"
+                >
+                  {language === "PT" ? "Unir-se à OMA" : "Join OMA"}
+                </button>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
